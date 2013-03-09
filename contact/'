@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+	<? include '../head-all.inc' ?>
+	<link href="/css/common2.css" media="all" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+
+	<div id="container">
+
+		<div id="pageHeader">
+			<?php include '../top.php'; ?>
+		</div> 
+
+		<div class="clear" style="width: 960px; height: 10px;"> </div>
+
+		<div id="mainWrap">
+			<div id="main">
+				<div id="mainTop">
+				</div>
+
+				<div id="mainContent">
+					<h1>Contact J & R</h1>
+					<p>You can use this form to get in touch with Jeff and Russ, who run J&R. Simply choose who you would like to contact and type in your 
+					message, and it will be emailed to us. 
+					<div class="infoBox">
+						<h3>Reach us by Phone</h3>
+						<p>
+						If you want to ask a technical question about web design or development, or one of the articles on Elated, please post your question on our
+						<a href="/forums/">Webmaster Forums</a>
+						.
+						<b>Do not ask us technical questions using this form.</b>
+						We simply don't have the time to reply. Thanks!
+						</p>
+					</div>
+					<br>
+					<br>
+				</div>
+			</div>
+
+			<div id="mainBot">
+			</div>
+		</div>
+
+		<div id="sidebarWrap">
+			<div id="sidebar">
+			</div>
+		</div>
+
+		<div class="clear"> </div>
+		<div style="height: 30px;"> </div>
+
+		<div id="pageFooter">
+			<?php include '../footer.php'; ?>
+			<div class="clear"> </div>
+		</div>
+
+	</div>
+
+	</body>
+</html>
+

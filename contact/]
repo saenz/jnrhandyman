@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<? include '../head-all.inc' ?>
+<link href="/css/common.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="home-header">
+        <?php include '../top.php'; ?>
+
+	<?php include 'top.php'; ?>
+
+	<div class="clear"></div>
+
+	<div style="margin-top:10px;float:left">
+		<div style="background:#fff;border:1px solid black;float:left;margin-left:8px;height:122px;width:112px">
+		<img alt="Russ-thumbnail" src="/images/russ-thumbnail.png" />
+		</div>
+
+		<div style="color:#fff;padding-left: 10px;font-size:1.3em;width:330px;float:left">
+		Are you losing your fight on home repair? Give us a call.
+		<p></p>
+		We'll whip that house back into shape.	
+		<p></p>
+		And if we can't do it we know someone who can.
+		</div>
+
+		<div class='clear'></div>
+
+ 		<div style="margin-left:auto;margin-right:auto;display:table;margin-top:25px">
+		<a href="contact/"><img src="/images/button_contactus.png"></a>
+ 		</div>
+	</div>
+
+	<div style="margin-left:4px;width:496px;float:left">
+		<div class="homepage">
+			<div class="video">
+				<img src="/images/bg_video_intro.png">
+				<div class="iframe"></div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<h1>Contact J & R</h1>
+<p>You can use this form to get in touch with Simon and Matt, who run Elated. Simply choose who you would like to contact and type in your message, and it will be emailed to us. We'll do our best to respond, but please note that we cannot answer all emails due to the high volume we receive.</p> 
+
+<div class="clear"></div>
+
+<?php include '../footer.php'; ?>
+
+</body>
+</html>
+
