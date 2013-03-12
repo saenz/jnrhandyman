@@ -1,19 +1,9 @@
 		<div id="footerColumns">
+
 			<div id="column1">
 				<div class="column">
 					<ul>
-					<li class="title">About J & R Handyman</li>
-					<li>Ezineasp.net is the initiative of group of Developers expertise in Microsoft ASP.Net. Just Search or Browse through categories to reach the solution of your problem.</li>
-					</ul>
-					<div class="clear"> </div>
-				</div>
-				<div class="clear"> </div>
-			</div>
-
-			<div id="column2">
-				<div class="column">
-					<ul>
-					<li class="title">Quick Links</li>
+					<li class="title">Links</li>
 					<li>
 					<a href="/contact.aspx">Contact us</a>
 					</li>
@@ -27,7 +17,7 @@
 				<div class="clear"> </div>
 			</div>
 
-			<div id="column3">
+			<div id="column2">
 				<div class="column">
 					<ul>
 					<li class="title">Follow us</li>
@@ -48,9 +38,16 @@
 				<div class="clear"> </div>
 			</div>
 
+			<div id="column3">
+				<div class="column">
+					<ul>
+					<li class="title">About</li>
+					<li>J & R Handyman is a service local to the Cypress, CA area that provides basic home repair at an affordable price.</li>
+					<li>This site was developed by http:www.ocwebpros.com</li>
+					</ul>
+					<div class="clear"> </div>
+				</div>
+				<div class="clear"> </div>
+			</div>
 			<div class="clear"> </div>
 		</div>
-
-		<div class="clear"> </div>
-		<div id="copyright"> © 2011 J & R Handyman. All Rights Reserved </div>
-	<div class="clear"> </div>

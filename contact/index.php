@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9>" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
 	<head>
-	<? include '../head-all.inc' ?>
-	<link href="/css/common2.css" media="all" rel="stylesheet" type="text/css" />
+	<?php include '../head-all.inc' ?>
 	</head>
 
 	<body>
@@ -11,7 +12,11 @@
 	<div id="container">
 
 		<div id="pageHeader">
+<!--[if (IE 6)|(IE 7)|(IE 8)]>
+    <div style="background: url('/images/bg_maroon.png') repeat-x scroll 0 0 #367B09;">
+<![endif]-->
 			<?php include '../top2.php'; ?>
+<!--[if (IE 6)|(IE 7)|(IE 8)]></div><![endif]-->
 		</div> 
 
 		<div class="clear" style="width: 960px;"> </div>
@@ -54,12 +59,12 @@ function validate_form ( form_name )
 
 }
 
-
 //-->
 
 </script>
 
 				<div id="mainContent">
+
 					<div class="breadcrumbs">
 					<a href="/">Home</a> : Contact Us
 					</div>
@@ -72,24 +77,25 @@ function validate_form ( form_name )
 						If you would like to reach us by phone please call <b>714-457-2595</b>.
 						</p>
 					</div>
- <form method="post" action="/cgi-bin/contact.cgi" id="contactform" onsubmit="return validate_form(this);">
+
+ <form method="post" onsubmit="return htmlFormsValidation.checkForm(htmlFormsValidationItems);" action="/cgi-bin/contact.cgi" id="contactform" onsubmit="return validate_form(this);">
 
         <table border="0">
 
           <tr>
-            <td><input type="radio" name="who" value="russ"/></td>
+            <td><input type="radio" name="who" id="who" value="russ"/></td>
             <td style="padding-right: 10px;"><a href="javascript:void(0)" onclick="javascript:document.getElementById('contactform').who[0].checked=true;" onfocus="window.focus();"><img alt="Russ" src="/images/russ-thumbnail.png" style="width: 100px; height: 100px;"/></a></td>
             <td><p><b>Russ</b> deals with most of the hands on home repair issues and project management for J & R.  He's been doing home maintenance since 1977.</p></td>
           </tr>
           <tr><td>&nbsp;</td></tr>
           <tr>
-            <td><input type="radio" name="who" value="jeff"/></td>
+            <td><input type="radio" name="who" id="who" value="jeff"/></td>
             <td style="padding-right: 10px;"><a href="javascript:void(0)" onclick="javascript:document.getElementById('contactform').who[1].checked=true;" onfocus="window.focus();"><img alt="Jeff" src="/images/jeff_thumbnail.png" style="width: 100px; height: 100px;"/></a></td>
             <td><p><b>Jeff</b> is the head web developer and media production guru. He has been doing web development since 1997.</p></td>
           </tr>
           <tr><td>&nbsp;</td></tr>
           <tr>
-            <td><input type="radio" name="who" value="general"/></td>
+            <td><input type="radio" name="who" id="who" value="general"/></td>
             <td style="padding-right: 10px;"><a href="javascript:void(0)" onclick="javascript:document.getElementById('contactform').who[2].checked=true;" onfocus="window.focus();"><img alt="General contact" src="/images/jr_logo_thumbnail.png" style="width: 100px; height: 100px;"/></a></td>
             <td><p><b>General contact</b>. If you're not sure which of us you'd like to email, then you can send us a general message by clicking this option, and either Jeff or Russ will reply.</p></td>
           </tr>
@@ -114,6 +120,7 @@ function validate_form ( form_name )
           <span class="fullwidthRight" style="width: 47%;">
             <input class="textField" type="text" name="lead" id="lead" style="width: 80%;"/>
           </span>
+
           <br class="clear" />
 
           <label for="message" style="text-align: center; display: block; font-weight: bold; margin: 20px 0 5px 0;">Please type your message below:</label>
@@ -152,6 +159,18 @@ function validate_form ( form_name )
 
 	</div>
 
+	<?php include '../followtab.php'; ?>
+
+<script type="text/javascript" src="/js/form-validation.js"></script>
+
+<script type="text/javascript">
+var htmlFormsValidationItems = new Array();
+htmlFormsValidationItems.push(new HtmlFormsItem('who','radio','Please indicate who you would like to contact.'));
+htmlFormsValidationItems.push(new HtmlFormsItem('from_name','text','Please provide your name.'));
+htmlFormsValidationItems.push(new HtmlFormsItem('from_email','text','Please provide a valid email address.'));
+htmlFormsValidationItems.push(new HtmlFormsItem('lead','text','Please provide how you heard about J & R.'));
+htmlFormsValidationItems.push(new HtmlFormsItem('message','textarea','Please provide your message.'));
+</script>
 	</body>
 </html>
 
